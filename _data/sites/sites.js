@@ -6,8 +6,8 @@ module.exports = {
 		frequency: 1, // (in minutes)
 	},
 	urls: [
-		"https://www.lexingtonthemes.com/",
-		"https://www.colorsandfonts.com/",
+		"https://lexingtonthemes.com/",
+		"https://colorsandfonts.com/",
 		"https://svgdoodles.com/",
 		"https://oxbowui.com/",
 	]
