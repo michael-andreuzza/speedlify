@@ -32,13 +32,15 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-fetch": "^4.0.1",
+    "@tailwindcss/vite": "^4.0.0-alpha.26",
     "byte-size": "^8.1.1",
     "cross-zip": "^4.0.1",
     "dotenv": "^16.3.1",
     "fast-glob": "^3.3.2",
     "lodash": "^4.17.21",
     "performance-leaderboard": "^11.6.0",
-    "short-hash": "^1.0.0"
+    "short-hash": "^1.0.0",
+    "tailwindcss": "^4.0.0-alpha.26"
   },
   "dependencies": {
     "chartist": "^0.11.4",

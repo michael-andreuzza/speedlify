@@ -1,6 +1,6 @@
 module.exports = {
-	name: "Unwrapped", // optional, falls back to object key
-	description: "The default sites that get tested",
+	name: "sites", // optional, falls back to object key
+	description: "All sites",
 	options: {
 		runs: 1,
 		frequency: 1, // (in minutes)
