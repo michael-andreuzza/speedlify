@@ -212,16 +212,7 @@ abbr {
 	font-size: 0.8125em; /* 13px /16 */
 }
 
-[data-expand-alias] {
-	white-space: nowrap;
-	display: inline-block;
-	text-decoration: none;
 
-	border-radius: 50px;
-	border: 1px solid #aaa;
-	padding: .5em 1em;
-	text-align: center;
-}
 .js .leaderboard-details > summary {
 	border: 0;
 	clip: rect(0 0 0 0);

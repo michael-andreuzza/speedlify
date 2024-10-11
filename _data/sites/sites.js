@@ -7,7 +7,7 @@ module.exports = {
 	},
 	urls: [
 		"https://lexingtonthemes.com/",
-		"https://colorsandfonts.com/",
+		"https://www.colorsandfonts.com/",
 		"https://svgdoodles.com/",
 		"https://oxbowui.com/",
 	]
