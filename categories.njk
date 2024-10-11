@@ -29,7 +29,7 @@ counts:
 				<div class="text-right text-gray-900 font-medium"><span data-sr-only>Data and Graphs</span></div>
 
 		</div>
-		<tbody>
+		<tbody >
 		{%- set showRank = true %}
 		{%- for site in results | getSites(sites, vertical, isolatedKeys) | sortCumulativeScore %}
 			{%- set newestKey = site | getObjectKey(":newest") %}
@@ -54,7 +54,7 @@ counts:
 				{%- set hasRedirect = site[newestKey].requestedUrl and site[newestKey].url != site[newestKey].requestedUrl %}
 				<td class="leaderboard-url">
 					<a class="flex flex-col" href="{{ site[newestKey].url }}">
-						<img src="https://v1.indieweb-avatar.11ty.dev/{{ site[newestKey].url | urlencode }}/" class="size-10" alt="IndieWeb Avatar for {{ site[newestKey].url | displayUrl }}" class="leaderboard-list-entry-thumbnail" loading="lazy" decoding="async">
+						<img src="https://v1.indieweb-avatar.11ty.dev/{{ site[newestKey].url | urlencode }}/" class="size-6" alt=" Avatar for {{ site[newestKey].url | displayUrl }}" class="leaderboard-list-entry-thumbnail" loading="lazy" decoding="async">
 						<code class="text-xs text-gray-500">{{ site[newestKey].url | displayUrl(hasRedirect) }}</code>{#
 					#}</a>
 					{%- if hasRedirect %}<span class="leaderboard-redirect-warn">Redirect from <code class="url">{{ site[newestKey].requestedUrl | displayUrl(true) }}</code></span>{% endif -%}
@@ -72,7 +72,12 @@ counts:
 				{%- set counts = counts | hundoCountTotals(site[newestKey]) %}
 				<td class="leaderboard-score">{% if showRank %}<is-land on:visible><speedlify-score class="leaderboard-score-circles{% if hundos === 4 %} leaderboard-score-circles-400{% endif %}" raw-data='{{ site[newestKey] | toJSON | safe }}'></speedlify-score></is-land><span class="leaderboard-score-sum leaderboard-number">{% if hundos === 4 %}😍{% else %}{{ site[newestKey] | lighthouseTotal }}{% endif %}</span>{% endif %}{% lighthouseSparkline site %}</td>
 				<td class="">{% weightSparkline site %}</td>
-				<td class="leaderboard-data-right"><a href="#details-{{ site[key].url | shortHash }}" data-expand-alias data-js-only><span class="leaderboard-expand-icon"></span> Data<span class=" text-gray-900 font-medium"> and Graphs</span></a></td>
+				<td class="leaderboard-data-right">
+					<a href="#details-{{ site[key].url | shortHash }}" data-expand-alias data-js-only>
+						<span class="leaderboard-expand-icon">
+
+						</span> Data<span class=" text-gray-900 font-medium"> and Graphs</span>
+						</a></td>
 			{%- endif %}
 			</tr>
 

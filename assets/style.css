@@ -143,9 +143,7 @@ abbr {
 	margin-left: auto;
 	margin-right: auto;
 }
-.leaderboard-list-entry {
-	border-top: 1px solid #444;
-}
+
 
 .leaderboard-list-entry-badrank {
 	border-top: 1px solid hsl(333, 100%, 20%);
@@ -212,11 +210,6 @@ abbr {
 }
 .leaderboard > thead > tr > th {
 	font-size: 0.8125em; /* 13px /16 */
-}
-@media (min-width: 50em) { /* 800px */
-	.leaderboard > tbody > tr > td {
-		font-size: 1.3125em; /* 21px /16 */
-	}
 }
 
 [data-expand-alias] {
